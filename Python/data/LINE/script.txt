@@ -1,0 +1,15 @@
+cd LINE-master\windows
+set ARGS=-size 16 -threads 1 -negative 1
+echo %ARGS% > output.txt
+echo .\line -train Z:\edges.txt -output LINE1.txt -order 1 -binary 0 %ARGS% >> output.txt
+.\line -train Z:\edges.txt -output LINE1.txt -order 1 -binary 0 %ARGS% >> output.txt
+
+rem echo .\line -train Z:\edges.txt -output LINE1.bin -order 1 -binary 1 %ARGS% >> output.txt
+rem .\line -train Z:\edges.txt -output LINE1.bin -order 1 -binary 1 %ARGS% >> output.txt
+
+echo .\line -train Z:\edges.txt -output LINE2.txt -order 2 -binary 0 %ARGS% >> output.txt
+.\line -train Z:\edges.txt -output LINE2.txt -order 2 -binary 0 %ARGS% >> output.txt
+
+rem echo .\line -train Z:\edges.txt -output LINE2.bin -order 2 -binary 1 %ARGS% >> output.txt
+rem .\line -train Z:\edges.txt -output LINE2.bin -order 2 -binary 1 %ARGS% >> output.txt
+

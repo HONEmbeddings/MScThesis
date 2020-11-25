@@ -1,0 +1,15 @@
+
+!*.ipynb
+!hospital_1.*
+!hospital_2.*
+!hospital_3.*
+!primaryschool_1.*
+!workplace_3.*
+!workplace_15.*
+!workplace_30.*
+!workplace_60.*
+!workplace_90.*
+!temporal_clusters.tedges
+!temporal-clusters.*
+!shuffled-temporal-clusters.*
+!metadata_*.csv

@@ -1,0 +1,10 @@
+# Ignore all files
+*
+
+# Except
+!*.py
+!*.ipynb
+!data/
+!data/LINE/
+!data/models/
+!.gitignore

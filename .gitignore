@@ -1,0 +1,9 @@
+# Ignore all files
+*
+
+# Except
+!Python
+!README.md
+!SocioPatterns
+!Thesis.pdf
+!.gitignore
