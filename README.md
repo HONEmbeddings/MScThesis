@@ -28,6 +28,8 @@ After initializing the `HigherOrderPathGenerator`, proceed as in `Classification
 
 To obtain the embeddings for HON DeepWalk or HON NetMF as Pandas DataFrames, we use:
 ```Python
+from HigherOrderPathGenerator import HigherOrderPathGenerator
+from Embedding import HON_DeepWalk_Embedding, HON_NetMF_Embedding
 gen = HigherOrderPathGenerator()
 gen.load_BuildHON_rules(filename=...)
 
@@ -43,11 +45,15 @@ print(emb_N.source_embedding) # or emb_N.target_embedding
 Note the different properties for the embedding data (embedding, source_embedding, and target_embedding).
 Hence, we wrap the Embedding instance into an `EmbeddingView` to select and visualize the desired embedding.
 ```Python
+from Visualizations import EmbeddingView
 #ev = EmbeddingView(emb_D)
 ev = EmbeddingView(emb_N, use_source=True)
 vis = ev.visualize_TSNE(random_state=random_state, title='TSNE, ' + ev._emb._id)
 vis.plot1() # hue='metadata'
 ```
+## Update: Refactoring and Performance Optimization
+The code described in the thesis is in `Python`.
+However, better use the refactored and optimized code in `Python_optimized`; see the Readme for details.
 
 ## Citation
 

@@ -3,6 +3,7 @@
 
 # Except
 !Python
+!Python_optimized
 !README.md
 !SocioPatterns
 !Thesis.pdf
